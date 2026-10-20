@@ -1,4 +1,4 @@
-# Appunti: Red Hat OpenShift Container Platform (RHOCP)
+# Red Hat OpenShift Container Platform (RHOCP)
 
 ## 1. Cos'è OpenShift?
 **OpenShift (RHOCP)** è una piattaforma enterprise completa per eseguire e gestire applicazioni containerizzate su cluster di server.
