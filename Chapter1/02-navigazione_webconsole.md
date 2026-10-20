@@ -3,8 +3,8 @@
 ## 1. Panoramica della Web Console OpenShift
 A differenza di Kubernetes (che di default fornisce solo una dashboard minimale con accesso proxy/token), **OpenShift include una Web Console nativa e completa** basata su API Kubernetes ed estensioni OpenShift.
 
-* **Interfaccia Grafica (GUI)**: Permette la gestione visiva di complessi compiti amministrativi.
-* **Estensibilità**: Gli *Operators* possono estendere la console aggiungendo menu, viste e moduli personalizzati.
+* **Interfaccia Grafica (GUI)**
+* **Estensibilità**: Gli *Operators* [^operator] possono estendere la console aggiungendo menu, viste e moduli personalizzati.
 * **Corrispondenza con CLI**: Tutte le operazioni eseguibili da Web Console si possono fare anche tramite linea di comando (`oc`).
 
 ---
@@ -13,7 +13,7 @@ A differenza di Kubernetes (che di default fornisce solo una dashboard minimale 
 
 ### Trovare l'URL della Console via CLI
 Se si conosce l'endpoint API del cluster, è possibile risalire all'URL della Web Console da terminale:
-1. Login al cluster
+1. Login al cluster: `oc login -u <USERNAME> <API_ENDPOINT>:<PORT>`
 ```bash
 
 oc login -u developer -p developer \
@@ -120,3 +120,5 @@ Accessibile da **Home -> API Explorer**, permette di consultare il catalogo comp
 oc api-resources
 oc explain deployment
 ```
+
+[^operator]: **Operator**: Un software che automatizza la gestione di un'applicazione o servizio complesso su OpenShift, estendendo anche le funzionalità della Web Console.
